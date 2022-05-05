@@ -73,7 +73,7 @@ class App extends React.Component {
           <div id='footer'>
             <h2>{this.state.winner == 0 ? 'P1 Kazandı' :
               this.state.winner == 1 ? 'P2 Kazandı' : ''}</h2>
-            <h2>{this.state.boxes.indexOf(2) == -1 ? 'Oyun Bitti Berabere' : ''}</h2>
+            <h2>{this.state.boxes.indexOf(2) == -1 ? this.state.winner == 2 ? 'Oyun Bitti Berabere' : '' : ''}</h2>
           </div>
         ) : <></>}
 
